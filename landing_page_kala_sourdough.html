@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kala Sourdough - Artisan Bakery & Healthy Bread</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Inter & Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#faf6f0',
+                            100: '#f4ede0',
+                            200: '#e6d7c1',
+                            300: '#d5bca0',
+                            400: '#c29d7c',
+                            500: '#ad7e59',
+                            600: '#946343',
+                            700: '#7a4e37',
+                            800: '#634030',
+                            900: '#52352a',
+                        },
+                        rustic: {
+                            cream: '#FDFBF7',
+                            sand: '#F5EFE6',
+                            wheat: '#E8D5C4',
+                            bark: '#3D312A',
+                            accent: '#D97706'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #FDFBF7;
+            color: #3D312A;
+        }
+        .wood-pattern {
+            background-color: #3D312A;
+            background-image: radial-gradient(#52352a 0.75px, transparent 0.75px), radial-gradient(#52352a 0.75px, #3D312A 0.75px);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-rustic-cream/90 backdrop-blur-md border-b border-brand-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-2 group">
+                <span class="text-3xl text-brand-600 group-hover:rotate-12 transition-transform duration-300">🌾</span>
+                <div class="flex flex-col">
+                    <span class="font-serif text-2xl font-bold tracking-tight text-rustic-bark">KALA</span>
+                    <span class="text-[10px] tracking-[0.2em] font-semibold text-brand-600 uppercase -mt-1">Sourdough Bakery</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-rustic-bark/80">
+                <a href="#keunggulan" class="hover:text-brand-600 transition-colors">Keunggulan</a>
+                <a href="#katalog" class="hover:text-brand-600 transition-colors">Katalog & Order</a>
+                <a href="#proses" class="hover:text-brand-600 transition-colors">Proses Artisan</a>
+                <a href="#testimoni" class="hover:text-brand-600 transition-colors">Testimoni</a>
+                <a href="#faq" class="hover:text-brand-600 transition-colors">FAQ</a>
+            </nav>
+
+            <!-- Header CTA -->
+            <div class="flex items-center gap-3">
+                <a href="#katalog" class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-full text-brand-700 bg-brand-100 hover:bg-brand-200 transition-colors">
+                    Lihat Menu
+                </a>
+                <a href="https://wa.me/6285973753596?text=Halo%20Kala%20Sourdough,%20saya%20ingin%20tanya%20mengenai%20produk%20roti" target="_blank" class="inline-flex items-center justify-center gap-2 px-5 py-2.5 text-sm font-semibold rounded-full text-white bg-brand-600 hover:bg-brand-700 shadow-md shadow-brand-600/20 transition-all transform hover:-translate-y-0.5">
+                    <i class="fa-brands fa-whatsapp text-lg">
+                    </i>
+                    <span>Pesan Langsung</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden pt-12 pb-20 lg:pt-20 lg:pb-28">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Text Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-100 border border-brand-200 text-brand-800 text-xs font-semibold tracking-wide uppercase">
+                        <span>✨ 100% Fermentasi Alami Tanpa Bahan Kimia</span>
+                    </div>
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-rustic-bark leading-tight">
+                        Roti Sehat, Gurih Alami & Ramah Pencernaan
+                    </h1>
+                    <p class="text-lg text-rustic-bark/80 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Dipanggang dengan cinta melalui fermentasi ragi alami 24 jam. Menghasilkan kerak renyah (crust) yang otentik dan tekstur dalam (crumb) yang lembut serta mudah dicerna.
+                    </p>
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#katalog" class="w-full sm:w-auto px-8 py-4 rounded-full bg-brand-600 text-white font-semibold text-center hover:bg-brand-700 shadow-lg shadow-brand-600/30 transition-all transform hover:-translate-y-1">
+                            🛒 Pilih & Order Roti
+                        </a>
+                        <a href="#keunggulan" class="w-full sm:w-auto px-8 py-4 rounded-full bg-white text-rustic-bark font-semibold text-center border border-brand-200 hover:bg-brand-50 transition-colors">
+                            Mengapa Sourdough?
+                        </a>
+                    </div>
+                    
+                    <!-- Micro Stats -->
+                    <div class="pt-8 grid grid-cols-3 gap-4 border-t border-brand-200/60 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <p class="font-serif text-2xl font-bold text-brand-700">24 Jam</p>
+                            <p class="text-xs text-rustic-bark/70">Fermentasi Dingin</p>
+                        </div>
+                        <div>
+                            <p class="font-serif text-2xl font-bold text-brand-700">0%</p>
+                            <p class="text-xs text-rustic-bark/70">Pengawet Artificial</p>
+                        </div>
+                        <div>
+                            <p class="font-serif text-2xl font-bold text-brand-700">4.9★</p>
+                            <p class="text-xs text-rustic-bark/70">Kepuasan Pelanggan</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Image Carousel / Showcase -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="absolute -top-4 -left-4 w-72 h-72 bg-brand-200 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-pulse"></div>
+                        <div class="absolute -bottom-4 -right-4 w-72 h-72 bg-amber-200 rounded-full mix-blend-multiply filter blur-2xl opacity-70 animate-pulse"></div>
+                        
+                        <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+                            <img src="https://images.unsplash.com/photo-1589367920969-ab8e050bbb04?auto=format&fit=crop&w=800&q=80" alt="Fresh Artisan Sourdough Bread" class="w-full h-[450px] object-cover hover:scale-105 transition-transform duration-700">
+                            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent p-6 text-white">
+                                <span class="bg-brand-500 text-xs px-2.5 py-1 rounded-full font-medium">Bestseller</span>
+                                <h3 class="font-serif text-xl font-bold mt-2">Classic Country Sourdough</h3>
+                                <p class="text-sm opacity-90">Kulit renyah dengan rasa asam khas yang lembut.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Keunggulan Section -->
+    <section id="keunggulan" class="py-20 bg-rustic-sand/60 border-y border-brand-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-brand-600 tracking-widest uppercase">Keunggulan Roti Kami</h2>
+                <p class="font-serif text-3xl sm:text-4xl font-bold text-rustic-bark mt-2">Kebaikan Alami Dalam Setiap Gigitan</p>
+                <p class="text-rustic-bark/70 mt-4">Sourdough bukan sekadar roti biasa. Proses pembuatan tradisional kami menghadirkan manfaat kesehatan yang nyata bagi Anda.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-brand-100 hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 bg-brand-100 rounded-xl flex items-center justify-center text-brand-700 text-2xl mb-6">
+                        🧪
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-rustic-bark mb-3">100% Ragi Alami (Starter)</h3>
+                    <p class="text-rustic-bark/70 text-sm leading-relaxed">
+                        Dibuat hanya dari campuran tepung, air, dan starter alami (Wild Yeast) yang kami rawat bertahun-tahun tanpa menggunakan ragi instan pabrikan.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-brand-100 hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 bg-brand-100 rounded-xl flex items-center justify-center text-brand-700 text-2xl mb-6">
+                        🌿
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-rustic-bark mb-3">Sangat Ramah Pencernaan</h3>
+                    <p class="text-rustic-bark/70 text-sm leading-relaxed">
+                        Fermentasi lambat menguraikan sebagian besar gluten dan asam fitat, membuat roti ini jauh lebih nyaman di perut dan tidak memicu kembung.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-brand-100 hover:shadow-md transition-shadow">
+                    <div class="w-14 h-14 bg-brand-100 rounded-xl flex items-center justify-center text-brand-700 text-2xl mb-6">
+                        🥖
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-rustic-bark mb-3">Tanpa Bahan Pengawet</h3>
+                    <p class="text-rustic-bark/70 text-sm leading-relaxed">
+                        Murni menggunakan 4 bahan utama: Tepung Berkualitas, Air, Garam Laut, dan Starter Alami. Tanpa pelembut atau pemutih sintetik.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Katalog & Order Section (Interaktif) -->
+    <section id="katalog" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-xs font-bold text-brand-600 tracking-widest uppercase">Katalog Artisanal</h2>
+                <p class="font-serif text-3xl sm:text-4xl font-bold text-rustic-bark mt-2">Pilih & Simulasikan Pesanan Anda</p>
+                <p class="text-rustic-bark/70 mt-4">Pilih jenis sourdough kesukaan Anda, atur jumlahnya, lalu klik tombol untuk mengirimkan pesanan langsung via WhatsApp!</p>
+            </div>
+
+            <!-- Filter Categories -->
+            <div class="flex justify-center items-center gap-2 mb-10 flex-wrap">
+                <button onclick="filterProducts('all')" id="filter-all" class="filter-btn px-5 py-2 rounded-full text-sm font-semibold transition-all bg-brand-600 text-white shadow-sm">
+                    Semua Varian
+                </button>
+                <button onclick="filterProducts('classic')" id="filter-classic" class="filter-btn px-5 py-2 rounded-full text-sm font-semibold transition-all bg-white text-rustic-bark hover:bg-brand-100 border border-brand-200">
+                    Classic
+                </button>
+                <button onclick="filterProducts('sweet')" id="filter-sweet" class="filter-btn px-5 py-2 rounded-full text-sm font-semibold transition-all bg-white text-rustic-bark hover:bg-brand-100 border border-brand-200">
+                    Sweet & Seeds
+                </button>
+            </div>
+
+            <!-- Main Interactive Area: Grid Produk & Sidebar Keranjang -->
+            <div class="grid lg:grid-cols-12 gap-8">
+                
+                <!-- Products Grid -->
+                <div class="lg:col-span-8 grid sm:grid-cols-2 gap-6" id="product-container">
+                    <!-- Dynamic Product Cards will be rendered here by JS -->
+                </div>
+
+                <!-- Order Cart Sidebar -->
+                <div class="lg:col-span-4">
+                    <div class="bg-white p-6 rounded-3xl shadow-xl border border-brand-200 sticky top-28">
+                        <div class="flex items-center justify-between pb-4 border-b border-brand-100">
+                            <h3 class="font-serif text-xl font-bold text-rustic-bark">Ringkasan Pesanan</h3>
+                            <span class="bg-brand-100 text-brand-800 text-xs px-2.5 py-1 rounded-full font-bold" id="cart-count">0 Produk</span>
+                        </div>
+
+                        <!-- Cart Items List -->
+                        <div id="cart-items" class="py-4 space-y-3 max-h-60 overflow-y-auto min-h-[120px] flex flex-col justify-center">
+                            <!-- Placeholder empty -->
+                            <p class="text-center text-sm text-rustic-bark/50 italic">Belum ada roti yang dipilih.<br>Klik tombol (+) pada katalog produk.</p>
+                        </div>
+
+                        <!-- Price Breakdown -->
+                        <div class="pt-4 border-t border-brand-100 space-y-2 text-sm">
+                            <div class="flex justify-between text-rustic-bark/70">
+                                <span>Subtotal</span>
+                                <span id="subtotal-price">Rp 0</span>
+                            </div>
+                            <div class="flex justify-between font-bold text-lg text-rustic-bark pt-2 border-t border-dashed border-brand-200">
+                                <span>Total Est.</span>
+                                <span class="text-brand-700" id="total-price">Rp 0</span>
+                            </div>
+                        </div>
+
+                        <!-- Input Catatan / Alamat Singkat -->
+                        <div class="mt-4 space-y-3">
+                            <input type="text" id="customer-name" placeholder="Nama Anda (Opsional)" class="w-full px-4 py-2.5 text-sm rounded-xl border border-brand-200 focus:outline-none focus:ring-2 focus:ring-brand-500 bg-rustic-cream/50">
+                            <textarea id="customer-note" rows="2" placeholder="Catatan Tambahan (cth: Potong tebal / Kirim tgl 12)" class="w-full px-4 py-2.5 text-sm rounded-xl border border-brand-200 focus:outline-none focus:ring-2 focus:ring-brand-500 bg-rustic-cream/50 resize-none"></textarea>
+                        </div>
+
+                        <!-- Send WhatsApp CTA Button -->
+                        <button onclick="sendToWhatsApp()" class="w-full mt-5 py-3.5 bg-green-600 hover:bg-green-700 text-white rounded-xl font-semibold flex items-center justify-center gap-2 shadow-lg shadow-green-600/20 transition-all">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Kirim Pesanan ke WhatsApp</span>
+                        </button>
+                        <p class="text-[11px] text-center text-rustic-bark/60 mt-2">
+                            Akan terhubung langsung dengan admin Kala Sourdough (085973753596)
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="proses" class="py-20 wood-pattern text-rustic-cream relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-brand-300 tracking-widest uppercase">Traditional Crafting</h2>
+                <p class="font-serif text-3xl sm:text-4xl font-bold text-white mt-2">4 Tahap Pembuatan Artisan Sourdough</p>
+                <p class="text-brand-200 mt-4">Butuh kesabaran dan keahlian khusus untuk menghasilkan roti sourdough bernutrisi tinggi.</p>
+            </div>
+
+            <div class="grid md:grid-cols-4 gap-6 relative">
+                <!-- Process 1 -->
+                <div class="bg-rustic-bark/80 p-6 rounded-2xl border border-brand-500/30 text-center relative">
+                    <div class="w-12 h-12 bg-brand-600 text-white font-serif text-xl font-bold rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">1</div>
+                    <h3 class="font-serif font-bold text-lg mb-2 text-brand-100">Mixing & Autolyse</h3>
+                    <p class="text-xs text-brand-200/80 leading-relaxed">Penggabungan tepung & air alami untuk pengaktifan gluten tanpa paksaan.</p>
+                </div>
+
+                <!-- Process 2 -->
+                <div class="bg-rustic-bark/80 p-6 rounded-2xl border border-brand-500/30 text-center relative">
+                    <div class="w-12 h-12 bg-brand-600 text-white font-serif text-xl font-bold rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">2</div>
+                    <h3 class="font-serif font-bold text-lg mb-2 text-brand-100">Stretch & Fold</h3>
+                    <p class="text-xs text-brand-200/80 leading-relaxed">Pengembangan struktur roti secara perlahan secara berulang tanpa mesin.</p>
+                </div>
+
+                <!-- Process 3 -->
+                <div class="bg-rustic-bark/80 p-6 rounded-2xl border border-brand-500/30 text-center relative">
+                    <div class="w-12 h-12 bg-brand-600 text-white font-serif text-xl font-bold rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">3</div>
+                    <h3 class="font-serif font-bold text-lg mb-2 text-brand-100">Cold Fermentation</h3>
+                    <p class="text-xs text-brand-200/80 leading-relaxed">Proses fermentasi dingin 24 jam untuk menghasilkan kompleksitas rasa yang kaya.</p>
+                </div>
+
+                <!-- Process 4 -->
+                <div class="bg-rustic-bark/80 p-6 rounded-2xl border border-brand-500/30 text-center relative">
+                    <div class="w-12 h-12 bg-brand-600 text-white font-serif text-xl font-bold rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">4</div>
+                    <h3 class="font-serif font-bold text-lg mb-2 text-brand-100">Dutch Oven Bake</h3>
+                    <p class="text-xs text-brand-200/80 leading-relaxed">Dipanggang pada suhu tinggi dengan uap untuk kerak renyah sempurna.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimoni" class="py-20 bg-rustic-sand/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-brand-600 tracking-widest uppercase">Ulasan Pelanggan</h2>
+                <p class="font-serif text-3xl sm:text-4xl font-bold text-rustic-bark mt-2">Apa Kata Mereka Tentang Kala Sourdough?</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testi 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-brand-100 relative">
+                    <div class="flex text-amber-400 mb-4 text-sm">
+                        ★★★★★
+                    </div>
+                    <p class="text-rustic-bark/80 text-sm italic mb-6">
+                        "Sebagai orang yang sering GERD, makan roti biasa sering bikin kembung. Tapi sourdough dari Kala ini beneran aman di lambung saya. Teksturnya mantap banget!"
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-brand-200 rounded-full flex items-center justify-center font-bold text-brand-800">DR</div>
+                        <div>
+                            <p class="font-bold text-sm text-rustic-bark">Dian Sastrowijoyo</p>
+                            <p class="text-xs text-rustic-bark/60">Pelanggan Setia (Jakarta)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testi 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-brand-100 relative">
+                    <div class="flex text-amber-400 mb-4 text-sm">
+                        ★★★★★
+                    </div>
+                    <p class="text-rustic-bark/80 text-sm italic mb-6">
+                        "Cranberry Walnut Sourdough-nya juara! Kombinasi manis asam sama nutty nya pas banget. Tiap pagi tinggal di-toast sebentar tambah butter, sempurna!"
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-brand-200 rounded-full flex items-center justify-center font-bold text-brand-800">RP</div>
+                        <div>
+                            <p class="font-bold text-sm text-rustic-bark">Rian Pratama</p>
+                            <p class="text-xs text-rustic-bark/60">Home Chef & Coffee Lover</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testi 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-brand-100 relative">
+                    <div class="flex text-amber-400 mb-4 text-sm">
+                        ★★★★★
+                    </div>
+                    <p class="text-rustic-bark/80 text-sm italic mb-6">
+                        "Pengiriman cepat, packing rapi banget. Rotinya masih wangi dan lumayan tahan lama disimpannya. Pasti bakal reorder lagi!"
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-brand-200 rounded-full flex items-center justify-center font-bold text-brand-800">MA</div>
+                        <div>
+                            <p class="font-bold text-sm text-rustic-bark">Maya Anggraini</p>
+                            <p class="text-xs text-rustic-bark/60">Ibu Rumah Tangga</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section id="faq" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-xs font-bold text-brand-600 tracking-widest uppercase">Pertanyaan Umum</h2>
+                <p class="font-serif text-3xl font-bold text-rustic-bark mt-2">Frequently Asked Questions</p>
+            </div>
+
+            <div class="space-y-4" id="faq-container">
+                <!-- FAQ Item 1 -->
+                <div class="border border-brand-200 rounded-2xl overflow-hidden transition-all">
+                    <button onclick="toggleFaq(1)" class="w-full p-6 text-left font-serif font-bold text-rustic-bark flex justify-between items-center bg-rustic-cream/30 hover:bg-rustic-cream">
+                        <span>Berapa lama daya tahan Roti Sourdough Kala?</span>
+                        <i id="faq-icon-1" class="fa-solid fa-chevron-down text-brand-600 transition-transform"></i>
+                    </button>
+                    <div id="faq-answer-1" class="hidden p-6 pt-0 text-sm text-rustic-bark/80 leading-relaxed bg-rustic-cream/30">
+                        Pada suhu ruangan, roti tahan 3-4 hari. Jika disimpan di dalam freezer dalam wadah tertutup rapat, roti bisa bertahan hingga 1 bulan. Cukup panggang kembali di oven/toaster sebelum dinikmati!
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border border-brand-200 rounded-2xl overflow-hidden transition-all">
+                    <button onclick="toggleFaq(2)" class="w-full p-6 text-left font-serif font-bold text-rustic-bark flex justify-between items-center bg-rustic-cream/30 hover:bg-rustic-cream">
+                        <span>Apakah Kala Sourdough bisa dipotongkan (sliced) dari toko?</span>
+                        <i id="faq-icon-2" class="fa-solid fa-chevron-down text-brand-600 transition-transform"></i>
+                    </button>
+                    <div id="faq-answer-2" class="hidden p-6 pt-0 text-sm text-rustic-bark/80 leading-relaxed bg-rustic-cream/30">
+                        Bisa! Anda bisa memilih opsi potong tebal/tipis pada saat pengisian catatan pesanan WhatsApp. Namun jika ingin kelembapan roti bertahan lebih lama, disarankan dikirim dalam bentuk Whole Loaf (utuh).
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border border-brand-200 rounded-2xl overflow-hidden transition-all">
+                    <button onclick="toggleFaq(3)" class="w-full p-6 text-left font-serif font-bold text-rustic-bark flex justify-between items-center bg-rustic-cream/30 hover:bg-rustic-cream">
+                        <span>Bagaimana sistem pengiriman pesanan?</span>
+                        <i id="faq-icon-3" class="fa-solid fa-chevron-down text-brand-600 transition-transform"></i>
+                    </button>
+                    <div id="faq-answer-3" class="hidden p-6 pt-0 text-sm text-rustic-bark/80 leading-relaxed bg-rustic-cream/30">
+                        Karena kami memproduksi fresh setiap hari (Bake by Order / Daily Fresh Bake), pengiriman dilakukan via kurir instan/sameday untuk area lokal, serta kurir ekspres 1 hari sampai untuk luar kota.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-rustic-bark text-brand-100 py-12 border-t border-brand-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-3 gap-8">
+            <div>
+                <div class="flex items-center gap-2 mb-4">
+                    <span class="text-2xl">🌾</span>
+                    <span class="font-serif text-xl font-bold text-white">KALA SOURDOUGH</span>
+                </div>
+                <p class="text-xs text-brand-200/80 leading-relaxed max-w-sm">
+                    Dibuat secara tradisional dengan kecintaan pada rotian sehat. Nikmati kehangatan sourdough asli langsung ke meja makan Anda.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="font-serif font-bold text-white mb-4">Kontak & Lokasi</h4>
+                <p class="text-xs text-brand-200/80 mb-2">📍 Artisan Bakery Studio, Indonesia</p>
+                <p class="text-xs text-brand-200/80 mb-2">📱 WhatsApp: <a href="https://wa.me/6285973753596" class="hover:underline text-brand-300">085973753596</a></p>
+                <p class="text-xs text-brand-200/80">⏰ Jam Operasional: 07.00 - 18.00 WIB</p>
+            </div>
+
+            <div>
+                <h4 class="font-serif font-bold text-white mb-4">Metode Pembayaran</h4>
+                <p class="text-xs text-brand-200/80 mb-4">Menerima Transfer Bank (BCA, Mandiri), QRRIS, dan E-Wallet setelah mengonfirmasi pesanan via WhatsApp.</p>
+                <div class="flex gap-3 text-lg text-brand-300">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <i class="fa-solid fa-qrcode"></i>
+                    <i class="fa-solid fa-wallet"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-6 border-t border-rustic-bark/50 text-center text-[11px] text-brand-300/60">
+            &copy; 2026 Kala Sourdough. All Rights Reserved. Made with ♥ for Healthy Lifestyle.
+        </div>
+    </footer>
+
+    <!-- JavaScript Application Logic -->
+    <script>
+        // Product Data
+        const products = [
+            {
+                id: 'p1',
+                name: 'Classic Country Loaf',
+                category: 'classic',
+                price: 45000,
+                desc: 'Roti sourdough klasik dengan kerak renyah dan bagian dalam lembut berongga.',
+                image: 'https://images.unsplash.com/photo-1589367920969-ab8e050bbb04?auto=format&fit=crop&w=600&q=80',
+                badge: 'Favorite'
+            },
+            {
+                id: 'p2',
+                name: 'Multigrain & Seed Sourdough',
+                category: 'classic',
+                price: 55000,
+                desc: 'Kombinasi sourdough dengan biji bunga matahari, wijen hitam, dan chia seed.',
+                image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80',
+                badge: 'High Fiber'
+            },
+            {
+                id: 'p3',
+                name: 'Cranberry & Walnut Loaf',
+                category: 'sweet',
+                price: 65000,
+                desc: 'Perpaduan gurihnya kacang walnut dan manis asam buah cranberry kering.',
+                image: 'https://images.unsplash.com/photo-1586444248902-2f64eddc13df?auto=format&fit=crop&w=600&q=80',
+                badge: 'Recommended'
+            },
+            {
+                id: 'p4',
+                name: 'Dark Choco Cinnamon Sourdough',
+                category: 'sweet',
+                price: 60000,
+                desc: 'Sourdough beraroma kayu manis alami dengan isian lelehan dark chocolate 70%.',
+                image: 'https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&w=600&q=80',
+                badge: 'Sweet Treat'
+            }
+        ];
+
+        // State Store
+        let cart = {};
+
+        // Format Currency
+        function formatRupiah(amount) {
+            return 'Rp ' + amount.toLocaleString('id-ID');
+        }
+
+        // Render Products Grid
+        function renderProducts(items) {
+            const container = document.getElementById('product-container');
+            container.innerHTML = '';
+
+            items.forEach(product => {
+                const qty = cart[product.id] ? cart[product.id].qty : 0;
+                
+                const cardHtml = `
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-brand-100 flex flex-col justify-between transition-all hover:shadow-md">
+                        <div>
+                            <div class="relative h-48 overflow-hidden">
+                                <img src="${product.image}" alt="${product.name}" class="w-full h-full object-cover">
+                                <span class="absolute top-3 right-3 bg-rustic-bark text-white text-[10px] uppercase tracking-wider font-semibold px-2.5 py-1 rounded-full opacity-90">
+                                    ${product.badge}
+                                </span>
+                            </div>
+                            <div class="p-5">
+                                <h4 class="font-serif font-bold text-lg text-rustic-bark">${product.name}</h4>
+                                <p class="text-rustic-bark/70 text-xs mt-1 leading-relaxed">${product.desc}</p>
+                                <p class="text-brand-700 font-bold text-base mt-3">${formatRupiah(product.price)}</p>
+                            </div>
+                        </div>
+
+                        <div class="p-5 pt-0">
+                            <div class="flex items-center justify-between bg-rustic-cream p-1.5 rounded-xl border border-brand-200">
+                                <span class="text-xs font-semibold px-2 text-rustic-bark/70">Jumlah:</span>
+                                <div class="flex items-center gap-2">
+                                    <button onclick="updateQty('${product.id}', -1)" class="w-7 h-7 bg-white text-rustic-bark rounded-lg flex items-center justify-center font-bold shadow-sm hover:bg-brand-100">-</button>
+                                    <span class="text-sm font-bold w-6 text-center">${qty}</span>
+                                    <button onclick="updateQty('${product.id}', 1)" class="w-7 h-7 bg-brand-600 text-white rounded-lg flex items-center justify-center font-bold shadow-sm hover:bg-brand-700">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                container.insertAdjacentHTML('beforeend', cardHtml);
+            });
+        }
+
+        // Filter Function
+        function filterProducts(category) {
+            // Update button UI
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('bg-brand-600', 'text-white', 'shadow-sm');
+                btn.classList.add('bg-white', 'text-rustic-bark', 'hover:bg-brand-100', 'border', 'border-brand-200');
+            });
+
+            const activeBtn = document.getElementById(`filter-${category}`);
+            if(activeBtn) {
+                activeBtn.classList.remove('bg-white', 'text-rustic-bark', 'hover:bg-brand-100', 'border', 'border-brand-200');
+                activeBtn.classList.add('bg-brand-600', 'text-white', 'shadow-sm');
+            }
+
+            if (category === 'all') {
+                renderProducts(products);
+            } else {
+                const filtered = products.filter(p => p.category === category);
+                renderProducts(filtered);
+            }
+        }
+
+        // Cart Actions
+        function updateQty(productId, delta) {
+            const product = products.find(p => p.id === productId);
+            if (!product) return;
+
+            if (!cart[productId]) {
+                if (delta > 0) {
+                    cart[productId] = { ...product, qty: delta };
+                }
+            } else {
+                cart[productId].qty += delta;
+                if (cart[productId].qty <= 0) {
+                    delete cart[productId];
+                }
+            }
+
+            // Re-render UI
+            const activeFilter = document.querySelector('.filter-btn.bg-brand-600').id.replace('filter-', '');
+            filterProducts(activeFilter);
+            renderCartUI();
+        }
+
+        // Render Cart Component
+        function renderCartUI() {
+            const cartItemsContainer = document.getElementById('cart-items');
+            const cartCountElement = document.getElementById('cart-count');
+            const subtotalElement = document.getElementById('subtotal-price');
+            const totalElement = document.getElementById('total-price');
+
+            const keys = Object.keys(cart);
+            let totalItemCount = 0;
+            let totalPrice = 0;
+
+            if (keys.length === 0) {
+                cartItemsContainer.innerHTML = `<p class="text-center text-sm text-rustic-bark/50 italic">Belum ada roti yang dipilih.<br>Klik tombol (+) pada katalog produk.</p>`;
+                cartCountElement.innerText = `0 Produk`;
+                subtotalElement.innerText = `Rp 0`;
+                totalElement.innerText = `Rp 0`;
+                return;
+            }
+
+            let cartHtml = '';
+            keys.forEach(id => {
+                const item = cart[id];
+                const itemTotal = item.price * item.qty;
+                totalItemCount += item.qty;
+                totalPrice += itemTotal;
+
+                cartHtml += `
+                    <div class="flex justify-between items-center text-sm bg-rustic-cream/60 p-2.5 rounded-xl border border-brand-100">
+                        <div class="flex-1 pr-2">
+                            <p class="font-semibold text-rustic-bark text-xs">${item.name}</p>
+                            <p class="text-[11px] text-rustic-bark/60">${item.qty} x ${formatRupiah(item.price)}</p>
+                        </div>
+                        <span class="font-bold text-brand-700 text-xs">${formatRupiah(itemTotal)}</span>
+                    </div>
+                `;
+            });
+
+            cartItemsContainer.innerHTML = cartHtml;
+            cartCountElement.innerText = `${totalItemCount} Item`;
+            subtotalElement.innerText = formatRupiah(totalPrice);
+            totalElement.innerText = formatRupiah(totalPrice);
+        }
+
+        // Send Order To WhatsApp (Direct 085973753596)
+        function sendToWhatsApp() {
+            const keys = Object.keys(cart);
+            const phoneNumber = "6285973753596";
+            
+            if (keys.length === 0) {
+                alert("Silakan pilih minimal 1 varian roti terlebih dahulu!");
+                return;
+            }
+
+            const customerName = document.getElementById('customer-name').value.trim() || 'Pelanggan';
+            const customerNote = document.getElementById('customer-note').value.trim();
+
+            let message = `Halo Kala Sourdough! 🌾\nSaya mau memesan roti sourdough segar dengan rincian berikut:\n\n`;
+            message += `👤 *Nama:* ${customerName}\n`;
+            message += `📋 *Pesanan:* \n`;
+
+            let total = 0;
+            keys.forEach((id, index) => {
+                const item = cart[id];
+                const sub = item.price * item.qty;
+                total += sub;
+                message += `${index + 1}. ${item.name} (${item.qty} pcs) - ${formatRupiah(sub)}\n`;
+            });
+
+            message += `\n💵 *Total Pesanan:* ${formatRupiah(total)}\n`;
+            
+            if (customerNote) {
+                message += `📝 *Catatan:* ${customerNote}\n`;
+            }
+
+            message += `\nMohon konfirmasi ketersediaan slot panggangan dan total ongkirnya ya. Terima kasih!`;
+
+            const encodedMessage = encodeURIComponent(message);
+            window.open(`https://wa.me/${phoneNumber}?text=${encodedMessage}`, '_blank');
+        }
+
+        // FAQ Toggle Accordion
+        function toggleFaq(id) {
+            const answer = document.getElementById(`faq-answer-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
+            
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                answer.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+
+        // Initialize App
+        window.onload = function() {
+            renderProducts(products);
+        };
+    </script>
+</body>
+</html>
